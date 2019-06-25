@@ -1,0 +1,854 @@
+html,
+body,
+.cover{
+    height: 100%;
+}
+
+h1, h2, h3, h4, h5, h6 {
+  font-family: 'Racing Sans One', cursive;
+}
+
+p {
+    font-family: Chivo, sans-serif;
+}
+
+
+/*
+===============
+NAVBAR
+===============
+*/
+
+.navbar-fixed-top {
+    min-height: 90px;
+}
+
+.navbar-nav > li > a {
+    padding-top: 0px;
+    padding-bottom: 0px;
+    padding-right: 30px;
+    padding-left: 30px;
+    line-height: 90px;
+    font-family: Chivo, sans-serif;
+    font-size: 15px;
+    transition: background-color 0.30s ease-in-out, color 0.30s ease-in-out;
+}
+
+.navbar-inverse .navbar-nav>li>a:hover {
+    color: #fff;
+    background-color: #1865e0;    
+}
+
+.navbar-inverse .navbar-nav>li>a:active {
+    color: #fff;
+    background-color: #1865e0;
+}
+
+.navbar-inverse .navbar-nav>.active>a,
+.navbar-inverse .navbar-nav>.active>a:hover {
+    color: #fff;
+    background-color: #1865e0;
+}
+
+.navbar-toggle {
+    margin-top: 18px;
+    padding: 20px;
+}
+
+/*
+===============
+COVER
+===============
+*/
+
+.cover {
+    background: url(pic/milk.jpg) top center no-repeat;
+    
+    background-size: cover;
+    background-attachment: fixed;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+    /* To vertically align the text */
+    display: table;
+    width: 100%;
+    padding: 0 15%;
+    box-shadow: inset 0 0 100px #000;
+}
+.contact-container{
+  margin-top: 4em;
+  margin-bottom: 3em;
+}
+.contact-section {
+  text-align: center;
+  font-family: 'Roboto', sans-serif;
+}
+
+.email-button {
+  padding: 30px;
+}
+.contact-button {
+  position: relative;
+  -webkit-perspective: 1000;
+  -webkit-backface-visibility: hidden;
+  -webkit-transform:translate3d(0,0,0);
+  color: #697082;
+  text-decoration: none;
+  font-weight: 400;
+  font-size: 1.2em;
+  border: 2px solid #697082;
+  border-radius: 4px;
+  padding: 20px 65px;
+  transition: 0.3s ease-in-out;
+  
+}
+.contact-button > span {
+  text-transform: none;
+  position: absolute;
+  color: white;
+  top: 20px;
+  left: 12px;
+  opacity: 0;
+  transition: all 0s ease 0s;
+}
+
+.contact-button:hover {
+  transition: 0.3s ease-in-out;
+  border: 2px solid #697082;
+  border-radius: 50px;
+  background-color: #697082;
+  color: #697082;
+}
+.contact-button:hover > span {
+  opacity: 1;
+  transition: all 0.25s ease-in-out 0.1s;
+  font-size: 14px;
+}
+.contact-button:before, contact-button:after {
+  content: "";
+  position: absolute;
+  top: -14px;
+  left: -12px;
+  width: 132px;
+  height: 25px;
+}
+
+  /* Social buttons at bottom of apge - different from "contact button" */
+.contact-buttons {
+  height: 60px;
+  margin: auto;
+  text-align: center;
+  width: 60%;
+  padding-top: 15px;
+
+}
+
+.social {
+  display: inline-block;
+  width: 45px;
+  height: 45px;
+  line-height: 45px;
+  text-align: center;
+  border: 1.5px solid #272628;
+  border-radius: 28%;
+  margin-right: 1em;
+}
+
+/* Specific colors for each button */
+.github-social {
+  color: #272628;
+}
+.codepen-social {
+  color: #272628;
+}
+.fcc-social {
+  color: #106E29;
+}
+.twitter-social {
+  color: #55acee;
+}
+.linkedin-social {
+  color: #007bb5;
+}
+.medium-social {
+  color: #3cb371;
+}
+/* Change specific colors on :hover */
+.contact-buttons > a {
+  transition: all .5s;
+}
+.contact-buttons > a:hover, .contact-buttons > a:focus {
+  border: none;
+}
+.contact-buttons > a.github-social:hover, .contact-buttons > a.github-social:focus {
+  color: white;
+  background-color: #272628;
+}
+.contact-buttons > a.codepen-social:hover, .contact-buttons > a.codepen-social:focus {
+  color: white;
+  background-color: #272628;
+}
+.contact-buttons > a.fcc-social:hover, .contact-buttons > a.fcc-social:focus {
+  color: white;
+  background-color: #106E29;
+}
+.contact-buttons > a.twitter-social:hover, .contact-buttons > a.twitter-social:focus {
+  color: white;
+  background-color: #55acee;
+}
+.contact-buttons > a.linkedin-social:hover, .contact-buttons > a.linkedin-social:focus {
+  color: white;
+  background-color: #007bb5;
+}
+.contact-buttons > a.medium-social:hover, .contact-buttons > a.medium-social:focus {
+  color: white;
+  background-color: #3cb371;
+}
+
+.cover-text {
+    color: white;
+    
+    /* To vertically align the text */
+    display: table-cell;
+    vertical-align: middle;
+}
+
+.cover-text h1 {
+    margin: 0;
+    font-size: 80px;
+    letter-spacing: -3px;
+}
+
+.cover-text p {
+    margin: 0;
+    font-size: 30px;
+}
+
+.cover .btn {
+    margin-top: 30px;
+}
+
+
+/*
+===============
+GENERAL STYLES
+===============
+*/
+
+section {
+    padding: 40px 20px;
+    padding-bottom: 90px;
+}
+
+section h1 {
+    font-size: 50px;
+    color: #3ec1d8;
+    margin-top: 50px;
+}
+
+.btn {
+    font-family: Chivo, sans-serif;
+    background-color: #17c0d6;
+    color: white;
+    border: none;
+    transition: box-shadow 0.20s ease-in-out; 
+
+}
+
+.btn:hover {
+    box-shadow: 2px 2px 10px #000;
+    color: white;
+}
+
+.btn:active {
+    background-color: #745d94;    
+    color: white;
+    box-shadow: none;
+}
+
+.btn:focus {
+    color: white;
+}
+
+.btn-lg {
+    border-radius: 0;
+    padding: 15px 100px;
+}
+
+/*
+===============
+ABOUT ME
+===============
+*/
+
+.img-skills {
+    padding: 20px;
+    padding-top: 40px;
+}
+
+.img-skills img {
+    margin: 10px;
+}
+
+/*
+===============
+PORTFOLIO
+===============
+*/
+#body {
+    font-family: 'Josefin Sans', sans-serif;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    background: #fff;
+    min-height: 100vh;
+  }
+  #body, #body * {
+    transition: all .3s;
+  }
+  #body #hd {
+    background: #293646;
+  }
+  #body #hd .logo {
+    position: relative;
+    overflow: hidden;
+    height: 100vh;
+  }
+  #body #hd .logo a {
+    position: relative;
+    padding: 50px;
+    z-index: 1;
+    display: block;
+    text-align: center;
+  }
+  #body #hd .logo img {
+    max-height: 250px;
+  }
+  #body #hd p {
+    color: #fff;
+    text-align: center;
+    font-size: 50px;
+  }
+  #body #hd .menu label[for="menu-nav"] {
+    height: 40px;
+    width: 40px;
+    cursor: pointer;
+    position: fixed;
+    left: 15px;
+    z-index: 9999;
+    top: 15px;
+    border-radius: 50%;
+  }
+  #body #hd .menu label[for="menu-nav"] span {
+    font-size: 0;
+    width: 70%;
+    height: 3px;
+    background: #0af;
+    display: inline-block;
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    margin: auto;
+  }
+  #body #hd .menu label[for="menu-nav"] span:first-child {
+    transform: translateY(-10px);
+  }
+  #body #hd .menu label[for="menu-nav"] span:last-child {
+    transform: translateY(10px);
+  }
+  #body #hd .menu #menu {
+    position: fixed;
+    left: 0;
+    height: 100vh;
+    width: 0%;
+    z-index: 9998;
+    background: #0af;
+    top: 0;
+    box-shadow: 6px 0 10px -2px rgba(0, 0, 0, 0.3);
+  }
+  #body #hd .menu #menu:before {
+    content: '';
+    position: absolute;
+    width: 100vw;
+    height: 100vh;
+    background: rgba(0, 0, 0, 0.8);
+    pointer-events: none;
+    opacity: 0;
+    left: 100%;
+    transition: opacity .3s;
+    transition-delay: .3s;
+  }
+  #body #hd .menu #menu ul {
+    list-style-type: none;
+    padding: 15px 15px 15px 50px;
+    margin-top: 75px;
+    transform: translateX(-1000px);
+  }
+  #body #hd .menu #menu ul li {
+    line-height: 75px;
+    font-size: 20px;
+    color: #fff;
+    transition: cubic-bezier(0.87, -0.41, 0.19, 1.44) all 0.5s;
+    cursor: pointer;
+  }
+  #body #hd .menu #menu ul li:hover {
+    letter-spacing: 10px;
+  }
+  #body #hd .menu input#menu-nav:checked ~ #menu {
+    width: 30%;
+    transition: cubic-bezier(0.87, -0.41, 0.19, 1.44) all 0.5s;
+  }
+  #body #hd .menu input#menu-nav:checked ~ #menu ul {
+    transform: translateX(0);
+    transition-delay: .2s;
+  }
+  #body #hd .menu input#menu-nav:checked ~ #menu:before {
+    left: 100%;
+    opacity: 1;
+    width: calc(100vw - 100%);
+    transition-delay: 0s;
+  }
+  #body #hd .menu input#menu-nav:checked ~ label {
+    background: #fff;
+  }
+  #body #hd .menu input#menu-nav:checked ~ label span {
+    opacity: 0;
+  }
+  #body #hd .menu input#menu-nav:checked ~ label span:first-child {
+    transform: rotate(45deg);
+    opacity: 1;
+  }
+  #body #hd .menu input#menu-nav:checked ~ label span:last-child {
+    transform: rotate(-45deg);
+    opacity: 1;
+  }
+  #body #bd .sec {
+    min-height: 100vh;
+    color: #293646;
+    padding: 50px;
+  }
+  #body #bd .sec.text-desc {
+    display: flex;
+    align-items: center;
+  }
+  #body #bd .sec:nth-child(2n) {
+    background: #293646;
+    color: #fff;
+  }
+  #body #bd .sec p {
+    font-size: 16px;
+    line-height: 2;
+    padding: 15px;
+  }
+  #body #bd #sclr .sclr-childs img {
+    max-width: 100%;
+  }
+  
+  #sclr {
+    overflow: hidden;
+    position: relative;
+  }
+  
+  .sclr-childs {
+    min-height: 100vh;
+  }
+  
+  .sclr-wrapper.fixit {
+    position: fixed;
+    top: 0;
+    left: 0;
+    height: 100vh;
+  }
+  
+  .sclr-wrapper > div {
+    display: flex;
+    align-items: center;
+  }
+  
+  .sclr-wrapper.fixit.absit {
+    position: absolute;
+    width: 100%;
+    top: auto;
+    left: 0;
+    bottom: 0;
+  }
+  
+  @media only screen and (max-width: 767px) {
+    input#menu-nav:checked ~ #menu {
+      width: 70% !important;
+    }
+  
+    .sec.text-desc, .sclr-wrapper > div {
+      flex-wrap: wrap;
+    }
+  }
+  
+.dark-background {
+    background-color: #14131C;
+}
+
+.dark-background h1 {
+    color: #6cd3eb;
+}
+
+.nav-pills {
+    padding-top: 20px;
+}
+
+.nav-pills>li>a {
+    border-radius: 0;
+    color: white;
+    font-size: 15px;
+}
+
+.nav-pills>li>a:hover {
+    background-color: #8da9b4;    
+}
+
+.nav-pills>li.active>a, 
+.nav-pills>li.active>a:focus {
+    border-radius: 0;
+    background-color: #5d8d94;
+    border: none;
+}
+
+.nav-pills>li.active>a:hover {
+    background-color: #4a6c76;
+}
+
+.tab-content .row {
+    padding: 40px;
+    color: white;
+}
+
+#translation p, #webdev p,
+#translation h3, #webdev h3 {
+    text-align: center;
+    color: white;    
+}
+
+#translation h3 + p, #webdev p {
+    margin-bottom: 30px;
+}
+
+
+/* --BEGIN WORK SECTION STYLING-- */
+#work-section h2 {
+  padding-bottom: 2em;
+}
+.work-info h4 {
+  margin-bottom: 15px;
+  font-family: 'Oswald', sans-serif;
+}
+
+.technologies-used {
+  display: inline-block;
+}
+
+
+.work-buttons {
+  padding-top: 8px;
+}
+
+.work-buttons .btn {
+  border-radius: 24px;
+  padding: 4px 20px;
+  display: inline-block;
+}
+.work-buttons i {
+  padding-right: 5px;
+}
+
+  /* Hover.css for custom :hover states on buttons in work section */
+.work-buttons button {
+  
+  color: rgb(253, 253, 253);
+  font-family: 'Roboto', sans-serif;
+  font-size: 14px;
+  height: 30px;
+  width: 100px;
+  
+/*   line-height: 30px; */
+/*   margin: 10px; */
+  text-align: center;
+  border: 1px solid #03184e;
+  border-radius: 24px;
+  display: inline-block;
+  overflow: hidden;
+}
+.work-buttons button:hover{
+  background-color: #697082;
+  color: white;
+  transition-duration: .3s;
+  text-decoration: none;
+}
+
+
+@keyframes hvr-icon-pop {
+  50% {
+    -webkit-transform: scale(1.5);
+    transform: scale(1.5);
+  }
+}
+.hvr-icon-pop {
+  display: inline-block;
+  vertical-align: middle;
+  -webkit-transform: perspective(1px) translateZ(0);
+  transform: perspective(1px) translateZ(0);
+  box-shadow: 0 0 1px transparent;
+  position: relative;
+  padding-right: 2.2em;
+  -webkit-transition-duration: 0.3s;
+  transition-duration: 0.3s;
+}
+.hvr-icon-pop:before {
+  content: "\f1cb";
+  position: absolute;
+  right: 1.5em;
+  padding: 0 1px;
+  font-family: FontAwesome;
+  -webkit-transform: translateZ(0);
+  transform: translateZ(0);
+  -webkit-transition-duration: 0.3s;
+  transition-duration: 0.3s;
+  -webkit-transition-property: transform;
+  transition-property: transform;
+  -webkit-transition-timing-function: ease-out;
+  transition-timing-function: ease-out;
+}
+.github-button .hvr-icon-pop:before {
+  content: "\f09b"
+}
+.hvr-icon-pop:hover:before, .hvr-icon-pop:focus:before, .hvr-icon-pop:active:before {
+  -webkit-animation-name: hvr-icon-pop;
+  animation-name: hvr-icon-pop;
+  -webkit-animation-duration: 0.3s;
+  animation-duration: 0.3s;
+  -webkit-animation-timing-function: linear;
+  animation-timing-function: linear;
+  -webkit-animation-iteration-count: 1;
+  animation-iteration-count: 1;
+}
+  /* End hover.css button styling...that's a lot of code right there... */
+
+.row > hr {
+  padding: 20px;
+  margin-top: 40px;
+  width: 70%;
+}
+#translation>p {
+    margin-top: 30px;
+    font-size: 15px;
+}
+
+/*
+===============
+CONTACT
+===============
+*/
+
+.form-group {
+    position: relative;
+}
+
+.form-control {
+    margin-top: 30px;
+    font-family: Chivo, sans-serif;
+    border-radius: 0;
+    border: none;
+    border-bottom: solid 1px #CCC;
+    box-shadow: none;
+    transition: none;    
+}
+
+.form-control:focus {
+    box-shadow: none;
+    outline: none;
+}
+
+label, input:placeholder-shown ~ label,
+textarea:placeholder-shown ~ label {
+    color: #999;
+    font-size: 18px;
+    font-weight: normal;
+    font-family: Chivo, sans-serif;
+    position: absolute;
+    pointer-events: none;
+    left: 5px;
+    top: 10px;
+    transition: 0.2s ease all;
+    z-index:1;
+}
+
+input:focus ~ label, 
+input:not(:placeholder-shown) ~ label,
+textarea:focus ~ label,
+textarea:not(:placeholder-shown) ~ label {
+    top: -20px;
+    font-size: 20px;  
+    color: #391867;
+    font-family: Chivo, sans-serif;
+}
+
+.bar {
+    position: relative;
+    display: block; width: 100%;
+}
+
+.bar:before, .bar:after {
+    content: '';
+    height: 2px;
+    width: 0;
+    bottom: 1px;
+    position: absolute;
+    background: #391867;
+    transition: 0.2s ease all;
+}
+
+.bar:before {
+    left: 50%;
+}
+
+.bar:after {
+    right: 50%;
+}
+
+input:focus ~ .bar:before, 
+input:focus ~ .bar:after,
+textarea:focus ~ .bar:before, 
+textarea:focus ~ .bar:after{
+    width: 50%;
+}
+
+.entranceContactRight {
+    padding-top: 130px;
+    padding-left: 30px;
+}
+
+#contact h2 {
+    margin-top: 0;
+    font-size: 35px;
+}
+
+#contact p {
+    font-size: 18px;
+}
+
+/* 
+=================
+FOOTER
+=================
+*/
+
+footer p {
+    color: white;
+    font-size: 15px;
+    padding: 40px 0;
+}
+
+footer img {
+    margin: 20px 0;
+}
+
+/* 
+=================
+MEDIA QUERIES 
+=================
+*/
+
+@media (max-width: 767px) {
+    .navbar-nav > li > a {
+        line-height: 20px;
+        padding-top: 10px;
+        padding-bottom: 10px;
+    }
+}
+
+@media only screen and (max-width : 568px) {
+    
+    .cover h1 {
+        font-size: 50px;
+    }
+    
+    .cover-text p{
+        font-size: 25px;
+    }
+    
+    .btn {
+        border-radius: 0;
+        display: block;
+    }
+    
+    .img-skills {
+        padding: 10px;
+    }
+  
+  .img-skills img {
+    height:100px;
+  }
+    
+}
+
+@media only screen and (max-width : 991px) {
+    
+    .img-skills {
+        padding: 10px;
+    }
+    
+    section .lead {
+        font-size: 32px;
+    }
+    
+    section h1, section p, section h2 {
+        text-align: center;
+    }
+    
+    #contact h2 {
+        margin-top: 20px;;
+        font-size: 35px;
+    }
+    
+    footer p {
+        text-align: center;
+        padding: 20px 0;
+        margin: 0;
+    }
+    
+    footer img {
+        margin-top: 0;
+        margin-bottom: 20px;
+    }
+    
+    .img-center {
+        text-align: center;
+    }
+  
+    .entranceContactRight {
+      padding-top: 20px;
+    }
+}
+.size {
+  width: 75%;
+  
+}
+@media only screen and (max-width : 380px) {
+    .navbar-brand img {
+      height: 40px;
+      margin-top: 10px;
+    }
+  
+    .cover h1 {
+        font-size: 35px;
+    }
+    
+    .cover-text p{
+        font-size: 18px;
+    }
+    
+    .btn-lg {
+        border-radius: 0;
+        padding: 15px 60px;
+    }
+}
+  
